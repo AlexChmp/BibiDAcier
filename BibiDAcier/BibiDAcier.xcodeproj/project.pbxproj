@@ -12,6 +12,7 @@
 		BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F2D2D316B8600934D8F /* Assets.xcassets */; };
 		BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F312D316B8600934D8F /* Preview Assets.xcassets */; };
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
+		BE8D84D52D3565C800C22937 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D84D42D3565C800C22937 /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BE408F312D316B8600934D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE408F382D35237600934D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE408F392D354CC000934D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE8D84D42D3565C800C22937 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				BE408F382D35237600934D8F /* Info.plist */,
 				BE408F292D316B8600934D8F /* BibiDAcierApp.swift */,
+				BE8D84D42D3565C800C22937 /* CustomTabBar.swift */,
 				BE408F2B2D316B8600934D8F /* ContentView.swift */,
 				BE408F2F2D316B8600934D8F /* BibiDAcier.entitlements */,
 				BE408F392D354CC000934D8F /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
+				BE8D84D52D3565C800C22937 /* CustomTabBar.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
