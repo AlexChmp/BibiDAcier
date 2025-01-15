@@ -49,7 +49,6 @@ struct ContentView: View {
                 Text("Profil")
                 Image(selectedIndex == 3 ? "profil_icon_selected" : "profil_icon_unselected")
             }
-            .badge("12")
             .tag(3)
         }
     }
