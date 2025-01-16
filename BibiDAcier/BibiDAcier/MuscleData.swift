@@ -77,7 +77,7 @@ let muscleGroups: [MuscleGroup] = [
     MuscleGroup(
         name: "Quadriceps",
         imageName: "quadriceps_icon",
-        exercises: ["Leg press", "Hack squat","Leg curl"],
+        exercises: ["Leg press", "Hack squat","Leg extensions"],
         exerciseDetails: [
             "Leg press": "Le leg press est un exercice de musculation réalisé sur une machine spécifique où vous poussez une charge avec les jambes, en position assise ou inclinée. L'exercice sollicite principalement les quadriceps, mais aussi les fessiers et les ischio-jambiers. Cet exercice permet de travailler les quadriceps de manière intense tout en réduisant le stress sur le bas du dos, ce qui en fait une excellente option pour ceux qui cherchent à développer la force et la masse musculaire des jambes. Il offre également une grande possibilité de surcharge progressive.",
             "Hack squat": "Le hack squat se pratique sur une machine inclinée, où l'on effectue un mouvement similaire à celui du squat traditionnel, mais avec une position plus contrôlée. Les pieds sont placés sur la plateforme, et l'on abaisse le corps vers le bas en fléchissant les genoux. Cet exercice met particulièrement l'accent sur les quadriceps, tout en sollicitant les fessiers et les muscles stabilisateurs. Il est idéal pour ceux qui cherchent à cibler spécifiquement l'avant des cuisses, en toute sécurité. Il est souvent préféré par ceux qui veulent isoler les quadriceps tout en évitant de mettre trop de pression sur le bas du dos.",
