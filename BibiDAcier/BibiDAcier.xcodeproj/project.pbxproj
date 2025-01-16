@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE13D15C2D390AC400D42453 /* testLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13D15B2D390AC400D42453 /* testLoop.swift */; };
+		BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE13D15D2D391AE900D42453 /* MuscleData.swift */; };
 		BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE408F292D316B8600934D8F /* BibiDAcierApp.swift */; };
 		BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE408F2B2D316B8600934D8F /* ContentView.swift */; };
 		BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F2D2D316B8600934D8F /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE13D15B2D390AC400D42453 /* testLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testLoop.swift; sourceTree = "<group>"; };
+		BE13D15D2D391AE900D42453 /* MuscleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleData.swift; sourceTree = "<group>"; };
 		BE408F262D316B8500934D8F /* BibiDAcier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibiDAcier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE408F292D316B8600934D8F /* BibiDAcierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibiDAcierApp.swift; sourceTree = "<group>"; };
 		BE408F2B2D316B8600934D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				BE408F392D354CC000934D8F /* LaunchScreen.storyboard */,
 				BE408F2D2D316B8600934D8F /* Assets.xcassets */,
 				BE408F302D316B8600934D8F /* Preview Content */,
+				BE13D15B2D390AC400D42453 /* testLoop.swift */,
+				BE13D15D2D391AE900D42453 /* MuscleData.swift */,
 			);
 			path = BibiDAcier;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE13D15C2D390AC400D42453 /* testLoop.swift in Sources */,
 				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
+				BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
