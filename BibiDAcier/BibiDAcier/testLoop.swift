@@ -1,23 +1,12 @@
-//
-//  testLoop.swift
-//  BibiDAcier
-//
-//  Created by neoxia on 16/01/2025.
-//
-
 import SwiftUI
-
 struct testLoop: View {
     @State private var selectedIndex: Int = 0
-
     var body: some View {
         TabView(selection: $selectedIndex) {
             // Onglet Exercices
             NavigationStack {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
-
-
                         // Boucle sur les groupes musculaires
                         ForEach(muscleGroups, id: \.name) { group in
                             SectionView(muscleGroup: group)
@@ -32,7 +21,6 @@ struct testLoop: View {
                 Image(selectedIndex == 0 ? "list_icon_selected" : "list_icon_unselected")
             }
             .tag(0)
-
             // Onglet Timer
             NavigationStack {
                 Text("Timer")
@@ -43,7 +31,6 @@ struct testLoop: View {
                 Image(selectedIndex == 1 ? "timer_icon_selected" : "timer_icon_unselected")
             }
             .tag(1)
-
             // Onglet Programmes
             NavigationStack {
                 Text("Programme")
@@ -54,7 +41,6 @@ struct testLoop: View {
                 Image(selectedIndex == 2 ? "programme_icon_selected" : "programme_icon_unselected")
             }
             .tag(2)
-
             // Onglet Profil
             NavigationStack {
                 Text("Profil")
@@ -68,11 +54,9 @@ struct testLoop: View {
         }
     }
 }
-
 // Vue pour une section spécifique (groupe musculaire)
 struct SectionView: View {
     let muscleGroup: MuscleGroup
-
     var body: some View {
         VStack {
             // Image du groupe musculaire
@@ -83,7 +67,6 @@ struct SectionView: View {
                     .frame(width: 300, height: 200)
             }
             .frame(maxWidth: .infinity)
-
             // Titre du groupe musculaire
             HStack {
                 Text(muscleGroup.name)
@@ -91,7 +74,6 @@ struct SectionView: View {
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
             }
-
             // Liste des exercices
             List(muscleGroup.exercises, id: \.self) { exercise in
                 NavigationLink(
@@ -111,9 +93,6 @@ struct SectionView: View {
         }
     }
 }
-
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         testLoop()
