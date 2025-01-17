@@ -1,5 +1,5 @@
 import SwiftUI
-struct testLoop: View {
+struct exerciseScreen: View {
     @State private var selectedIndex: Int = 0
     var body: some View {
         TabView(selection: $selectedIndex) {
@@ -93,8 +93,21 @@ struct SectionView: View {
         }
     }
 }
+
+struct ExerciseDetailView: View{
+    let exerciseName: String
+    let exerciseDetail: String
+    
+    var body: some View{
+        VStack{
+            Text(exerciseName)
+            Text(exerciseDetail)
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        testLoop()
+        exerciseScreen()
     }
 }
