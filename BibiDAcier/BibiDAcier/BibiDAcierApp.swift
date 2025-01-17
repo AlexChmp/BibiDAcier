@@ -11,7 +11,7 @@ import SwiftUI
 struct BibiDAcierApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            exerciseScreen()
         }
     }
 }
