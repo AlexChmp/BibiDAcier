@@ -11,7 +11,9 @@ import SwiftUI
 struct BibiDAcierApp: App {
     var body: some Scene {
         WindowGroup {
-            exerciseScreen()
+            ZStack {
+                MainTabView()
+            }
         }
     }
 }
