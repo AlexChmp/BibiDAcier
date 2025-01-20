@@ -6,12 +6,10 @@ struct ExerciseScreen: View {
     }
 }
 
-// Contenu spécifique aux exercices
 struct ExerciseScreenContent: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                // Boucle sur les groupes musculaires
                 ForEach(muscleGroups, id: \.name) { group in
                     SectionView(muscleGroup: group)
                 }
@@ -22,12 +20,10 @@ struct ExerciseScreenContent: View {
     }
 }
 
-// Vue pour une section spécifique (groupe musculaire)
 struct SectionView: View {
     let muscleGroup: MuscleGroup
     var body: some View {
         VStack {
-            // Image du groupe musculaire
             HStack {
                 Image(muscleGroup.imageName)
                     .resizable()
@@ -35,14 +31,14 @@ struct SectionView: View {
                     .frame(width: 300, height: 200)
             }
             .frame(maxWidth: .infinity)
-            // Titre du groupe musculaire
+            
             HStack {
                 Text(muscleGroup.name)
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
             }
-            // Liste des exercices
+
             List(muscleGroup.exercises, id: \.self) { exercise in
                 NavigationLink(
                     destination: ExerciseDetailView(
@@ -57,20 +53,30 @@ struct SectionView: View {
                     .padding(.vertical, 5)
                 }
             }
-            .frame(height: 150) // Limiter la hauteur de la liste
+            .frame(height: 150)
         }
     }
 }
 
-struct ExerciseDetailView: View{
+struct ExerciseDetailView: View {
     let exerciseName: String
     let exerciseDetail: String
-    
-    var body: some View{
-        VStack{
+
+    var body: some View {
+        VStack(spacing: 20) {
             Text(exerciseName)
+                .font(.title)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+
             Text(exerciseDetail)
+                .font(.body)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 20)
         }
+        .padding(.top, 20)
+        .frame(maxWidth: .infinity, alignment: .center)
     }
 }
 

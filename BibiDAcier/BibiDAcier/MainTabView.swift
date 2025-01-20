@@ -24,8 +24,7 @@ struct MainTabView: View {
             
             // Onglet Timer
             NavigationStack {
-                Text("Timer")
-                    .navigationTitle("Timer")
+                TimerPage()
             }
             .tabItem {
                 Text("Timer")

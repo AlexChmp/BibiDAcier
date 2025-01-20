@@ -15,6 +15,7 @@
 		BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F312D316B8600934D8F /* Preview Assets.xcassets */; };
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
 		BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3A2D3E462500F10224 /* MainTabView.swift */; };
+		BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3C2D3E86C000F10224 /* TimerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BE408F382D35237600934D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE408F392D354CC000934D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEBEED3A2D3E462500F10224 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		BEBEED3C2D3E86C000F10224 /* TimerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				BE13D15B2D390AC400D42453 /* exerciseScreen.swift */,
 				BE13D15D2D391AE900D42453 /* MuscleData.swift */,
 				BEBEED3A2D3E462500F10224 /* MainTabView.swift */,
+				BEBEED3C2D3E86C000F10224 /* TimerPage.swift */,
 			);
 			path = BibiDAcier;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */,
 				BE13D15C2D390AC400D42453 /* exerciseScreen.swift in Sources */,
 				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
+				BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */,
 				BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,
 			);
