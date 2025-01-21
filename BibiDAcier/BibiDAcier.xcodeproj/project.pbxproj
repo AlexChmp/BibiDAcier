@@ -16,6 +16,7 @@
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
 		BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3A2D3E462500F10224 /* MainTabView.swift */; };
 		BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3C2D3E86C000F10224 /* TimerPage.swift */; };
+		BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED402D3F9AC000F10224 /* ProfilePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BE408F392D354CC000934D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEBEED3A2D3E462500F10224 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BEBEED3C2D3E86C000F10224 /* TimerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPage.swift; sourceTree = "<group>"; };
+		BEBEED402D3F9AC000F10224 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				BE13D15D2D391AE900D42453 /* MuscleData.swift */,
 				BEBEED3A2D3E462500F10224 /* MainTabView.swift */,
 				BEBEED3C2D3E86C000F10224 /* TimerPage.swift */,
+				BEBEED402D3F9AC000F10224 /* ProfilePage.swift */,
 			);
 			path = BibiDAcier;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */,
 				BE13D15C2D390AC400D42453 /* exerciseScreen.swift in Sources */,
 				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
+				BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */,
 				BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */,
 				BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,

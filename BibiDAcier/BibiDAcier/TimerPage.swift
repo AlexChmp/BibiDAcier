@@ -8,6 +8,7 @@ struct TimerPage: View {
     @State private var timer: Timer? = nil
     
     @State private var selectedMinutes: Int = 0
+    @State private var selectedSeconds: Int = 0
 
     var body: some View {
         VStack {
@@ -19,13 +20,34 @@ struct TimerPage: View {
                 Text(formatTime(timeElapsedTimer))
                     .font(.largeTitle)
                     .padding()
-                Picker("", selection: $selectedMinutes) {
-                    ForEach(0..<60, id: \.self) { i in
-                        Text("\(i) min").tag(i)
+
+                // Picker for minutes
+                HStack {
+                    VStack {
+                        Text("Minutes")
+                            .font(.headline)
+                        Picker("", selection: $selectedMinutes) {
+                            ForEach(0..<60, id: \.self) { i in
+                                Text("\(i)").tag(i)
+                            }
+                        }
+                        .pickerStyle(WheelPickerStyle())
+                        .frame(height: 100)
+                    }
+
+                    VStack {
+                        Text("Secondes")
+                            .font(.headline)
+                        Picker("", selection: $selectedSeconds) {
+                            ForEach(0..<60, id: \.self) { i in
+                                Text("\(i)").tag(i)
+                            }
+                        }
+                        .pickerStyle(WheelPickerStyle())
+                        .frame(height: 100)
                     }
                 }
-                .pickerStyle(WheelPickerStyle())
-                .padding(.horizontal)
+                .padding()
 
                 HStack(spacing: 20) {
                     Button(action: { startTimer() }) {
@@ -83,7 +105,7 @@ struct TimerPage: View {
             timer?.invalidate()
             timer = nil
         } else {
-            timeElapsedTimer = Double(selectedMinutes * 60)
+            timeElapsedTimer = Double(selectedMinutes * 60 + selectedSeconds)
             timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
                 if timeElapsedTimer > 0 {
                     timeElapsedTimer -= 0.1
