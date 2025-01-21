@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 3
     
     var body: some View {
         TabView(selection: $selectedIndex) {
@@ -45,8 +45,7 @@ struct MainTabView: View {
             
             // Onglet Profil
             NavigationStack {
-                Text("Profil")
-                    .navigationTitle("Profil")
+                ProfilePage()
             }
             .tabItem {
                 Text("Profil")
@@ -56,12 +55,7 @@ struct MainTabView: View {
         }
     }
 }
-struct TimerScreen: View {
-    var body: some View {
-        Text("Timer")
-            .navigationTitle("Timer")
-    }
-}
+
 
 struct ProgrammesScreen: View {
     var body: some View {
@@ -70,16 +64,6 @@ struct ProgrammesScreen: View {
     }
 }
 
-struct ProfilScreen: View {
-    var body: some View {
-        Text("Profil")
-            .navigationTitle("Profil")
-    }
-}
 
 
-struct PreviewTest: PreviewProvider {
-    static var previews: some View {
-       MainTabView()
-    }
-}
+
