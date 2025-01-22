@@ -17,6 +17,8 @@
 		BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3A2D3E462500F10224 /* MainTabView.swift */; };
 		BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3C2D3E86C000F10224 /* TimerPage.swift */; };
 		BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED402D3F9AC000F10224 /* ProfilePage.swift */; };
+		BEBEED452D3FDC4C00F10224 /* ProgrammePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */; };
+		BEBEED472D3FFDE100F10224 /* NewProgrammePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		BEBEED3A2D3E462500F10224 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BEBEED3C2D3E86C000F10224 /* TimerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPage.swift; sourceTree = "<group>"; };
 		BEBEED402D3F9AC000F10224 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammePage.swift; sourceTree = "<group>"; };
+		BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProgrammePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				BEBEED3A2D3E462500F10224 /* MainTabView.swift */,
 				BEBEED3C2D3E86C000F10224 /* TimerPage.swift */,
 				BEBEED402D3F9AC000F10224 /* ProfilePage.swift */,
+				BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */,
+				BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */,
 			);
 			path = BibiDAcier;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
 				BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */,
 				BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */,
+				BEBEED472D3FFDE100F10224 /* NewProgrammePage.swift in Sources */,
+				BEBEED452D3FDC4C00F10224 /* ProgrammePage.swift in Sources */,
 				BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,
 			);

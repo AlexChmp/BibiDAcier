@@ -72,14 +72,8 @@ struct ProfilePage: View {
                     .padding(.top, 20)
                 }
                 .navigationTitle("Profil")
-                .padding(.top, 20)
             }
         }
     }
 }
 
-struct PreviewTest: PreviewProvider {
-    static var previews: some View {
-        ProfilePage()
-    }
-}
