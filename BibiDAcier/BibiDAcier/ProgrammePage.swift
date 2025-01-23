@@ -17,7 +17,7 @@ struct ProgrammePage: View {
                         .background(Color.blue.opacity(0.1))
                         .cornerRadius(8)
                         .multilineTextAlignment(.center)
-                        .padding()
+                        .padding(   )
                     
                     Button(action: {
                         isClickedInfo = false // Retour à la vue principale
