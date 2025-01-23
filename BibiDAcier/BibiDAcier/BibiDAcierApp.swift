@@ -13,8 +13,7 @@ struct BibiDAcierApp: App {
     var body: some Scene {
         WindowGroup {
             if hasSeenOnboarding {
-                OnboardingView()
-                //MainTabView()
+                MainTabView()
             } else {
                 OnboardingView()
             }

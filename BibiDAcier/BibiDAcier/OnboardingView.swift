@@ -2,8 +2,6 @@
 
 import SwiftUI
 
-
-
 struct OnboardingView: View {
     let onboardingItems = [
         OnboardingItem(imageName: "onboarding1", title: "Bienvenue", description: "Découvrez notre application."),
