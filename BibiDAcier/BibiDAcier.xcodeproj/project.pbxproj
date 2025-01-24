@@ -19,6 +19,7 @@
 		BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED402D3F9AC000F10224 /* ProfilePage.swift */; };
 		BEBEED452D3FDC4C00F10224 /* ProgrammePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */; };
 		BEBEED472D3FFDE100F10224 /* NewProgrammePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */; };
+		BEBEED492D42424A00F10224 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED482D42424A00F10224 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BEBEED402D3F9AC000F10224 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammePage.swift; sourceTree = "<group>"; };
 		BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProgrammePage.swift; sourceTree = "<group>"; };
+		BEBEED482D42424A00F10224 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				BEBEED402D3F9AC000F10224 /* ProfilePage.swift */,
 				BEBEED442D3FDC4C00F10224 /* ProgrammePage.swift */,
 				BEBEED462D3FFDE100F10224 /* NewProgrammePage.swift */,
+				BEBEED482D42424A00F10224 /* OnboardingView.swift */,
 			);
 			path = BibiDAcier;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				BEBEED452D3FDC4C00F10224 /* ProgrammePage.swift in Sources */,
 				BE13D15E2D391AE900D42453 /* MuscleData.swift in Sources */,
 				BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */,
+				BEBEED492D42424A00F10224 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = BibiDAcier/BibiDAcier.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BibiDAcier/Preview Content\"";
@@ -324,6 +329,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.calvignac.BibiDAcier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -341,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = BibiDAcier/BibiDAcier.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BibiDAcier/Preview Content\"";
@@ -368,6 +375,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.calvignac.BibiDAcier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
