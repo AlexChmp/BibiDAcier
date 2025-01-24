@@ -27,22 +27,22 @@ struct OnboardingView: View {
                                 .ignoresSafeArea()
                             
                             VStack {
-                                Spacer() // Ajoute un espace flexible pour pousser le contenu vers le bas
+                                Spacer()
                                 
                                 // Texte superposé à l'image
                                 Text(onboardingItems[index].title)
                                     .font(.largeTitle)
                                     .fontWeight(.bold)
-                                    .foregroundColor(currentPage == 0 ? .black : .white) // Texte noir pour la première page
-                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5) // Pas d'ombre en noir
+                                    .foregroundColor(currentPage == 0 ? .black : .white)
+                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5)
                                     .padding(.bottom, 10)
                                 
                                 Text(onboardingItems[index].description)
                                     .font(.body)
-                                    .foregroundColor(currentPage == 0 ? .black : .white) // Texte noir pour la première page
+                                    .foregroundColor(currentPage == 0 ? .black : .white)
                                     .multilineTextAlignment(.center)
                                     .padding(.horizontal, 30)
-                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5) // Pas d'ombre en noir
+                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5) 
                                 
                                 Spacer()
                                     .frame(height: geometry.size.height * 0.1)
@@ -79,7 +79,7 @@ struct OnboardingPageView: View {
     let item: OnboardingItem
 
     var body: some View {
-        EmptyView() // Ce composant est maintenant intégré dans le ZStack de OnboardingView.
+        EmptyView()
     }
 }
 
