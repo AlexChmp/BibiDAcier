@@ -14,6 +14,8 @@
 		BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F2D2D316B8600934D8F /* Assets.xcassets */; };
 		BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F312D316B8600934D8F /* Preview Assets.xcassets */; };
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
+		BEA597202D47D02D00D02D2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */; };
+		BEA597232D47D1DE00D02D2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BEA597222D47D1DE00D02D2B /* FirebaseAnalytics */; };
 		BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3A2D3E462500F10224 /* MainTabView.swift */; };
 		BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3C2D3E86C000F10224 /* TimerPage.swift */; };
 		BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED402D3F9AC000F10224 /* ProfilePage.swift */; };
@@ -33,6 +35,7 @@
 		BE408F312D316B8600934D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE408F382D35237600934D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE408F392D354CC000934D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEBEED3A2D3E462500F10224 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BEBEED3C2D3E86C000F10224 /* TimerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPage.swift; sourceTree = "<group>"; };
 		BEBEED402D3F9AC000F10224 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA597232D47D1DE00D02D2B /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 				BE408F2F2D316B8600934D8F /* BibiDAcier.entitlements */,
 				BE408F392D354CC000934D8F /* LaunchScreen.storyboard */,
 				BE408F2D2D316B8600934D8F /* Assets.xcassets */,
+				BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */,
 				BE408F302D316B8600934D8F /* Preview Content */,
 				BE13D15B2D390AC400D42453 /* exerciseScreen.swift */,
 				BE13D15D2D391AE900D42453 /* MuscleData.swift */,
@@ -114,6 +119,9 @@
 			dependencies = (
 			);
 			name = BibiDAcier;
+			packageProductDependencies = (
+				BEA597222D47D1DE00D02D2B /* FirebaseAnalytics */,
+			);
 			productName = BibiDAcier;
 			productReference = BE408F262D316B8500934D8F /* BibiDAcier.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +150,9 @@
 				Base,
 			);
 			mainGroup = BE408F1D2D316B8500934D8F;
+			packageReferences = (
+				BEA597212D47D1DE00D02D2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BE408F272D316B8500934D8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */,
+				BEA597202D47D02D00D02D2B /* GoogleService-Info.plist in Resources */,
 				BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */,
 				BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */,
 			);
@@ -408,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEA597212D47D1DE00D02D2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEA597222D47D1DE00D02D2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEA597212D47D1DE00D02D2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE408F1E2D316B8500934D8F /* Project object */;
 }
