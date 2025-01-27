@@ -1,12 +1,10 @@
-
-
 import SwiftUI
 
 struct OnboardingView: View {
     let onboardingItems = [
-        OnboardingItem(imageName: "onboarding1", title: "Bienvenue", description: "Découvrez notre application."),
-        OnboardingItem(imageName: "onboarding2", title: "Fonctionnalités", description: "Accédez à des outils incroyables."),
-        OnboardingItem(imageName: "onboarding3", title: "Commencez maintenant", description: "Inscrivez-vous et profitez-en !")
+        OnboardingItem(imageName: "onboarding4", title: "Bienvenue", description: "Découvrez notre application."),
+        OnboardingItem(imageName: "onboarding5", title: "Fonctionnalités", description: "Accédez à des outils incroyables."),
+        OnboardingItem(imageName: "onboarding6", title: "Commencez maintenant", description: "Inscrivez-vous et profitez-en !")
     ]
     
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
@@ -21,31 +19,32 @@ struct OnboardingView: View {
                             // Image en plein écran
                             Image(onboardingItems[index].imageName)
                                 .resizable()
-                                .scaledToFill()
+                                .scaledToFit()
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .clipped()
                                 .ignoresSafeArea()
                             
+                            // Texte superposé en haut
                             VStack {
+                                VStack(spacing: 10) {
+                                    Text(onboardingItems[index].title)
+                                        .font(.largeTitle)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.black)
+                                        .padding(.top, 40) // Ajuster l'espacement depuis le haut
+                                    
+                                    Text(onboardingItems[index].description)
+                                        .font(.body)
+                                        .foregroundColor(.black)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.horizontal, 30)
+                                }
+                                .frame(maxWidth: .infinity)
+                                .background(
+                                    Color.white.opacity(0.7) // Ajouter un fond semi-transparent pour rendre le texte plus lisible
+                                        .edgesIgnoringSafeArea(.top)
+                                )
                                 Spacer()
-                                
-                                // Texte superposé à l'image
-                                Text(onboardingItems[index].title)
-                                    .font(.largeTitle)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(currentPage == 0 ? .black : .white)
-                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5)
-                                    .padding(.bottom, 10)
-                                
-                                Text(onboardingItems[index].description)
-                                    .font(.body)
-                                    .foregroundColor(currentPage == 0 ? .black : .white)
-                                    .multilineTextAlignment(.center)
-                                    .padding(.horizontal, 30)
-                                    .shadow(color: currentPage == 0 ? .clear : .black, radius: 5) 
-                                
-                                Spacer()
-                                    .frame(height: geometry.size.height * 0.1)
                             }
                         }
                         .tag(index)
@@ -75,18 +74,9 @@ struct OnboardingView: View {
     }
 }
 
-struct OnboardingPageView: View {
-    let item: OnboardingItem
-
-    var body: some View {
-        EmptyView()
-    }
-}
-
 // Modèle pour chaque écran d'onboarding
 struct OnboardingItem {
     let imageName: String
     let title: String
     let description: String
 }
-
