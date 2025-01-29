@@ -17,15 +17,19 @@ struct TimerPage: View {
                 Text("Timer")
                     .font(.largeTitle)
                     .padding()
+                    .foregroundColor(.black) // Texte en noir pour un contraste optimal
+
                 Text(formatTime(timeElapsedTimer))
                     .font(.largeTitle)
                     .padding()
+                    .foregroundColor(.black) // Texte en noir pour un contraste optimal
 
                 // Picker for minutes
                 HStack {
                     VStack {
                         Text("Minutes")
                             .font(.headline)
+                            .foregroundColor(.black) // Texte en noir
                         Picker("", selection: $selectedMinutes) {
                             ForEach(0..<60, id: \.self) { i in
                                 Text("\(i)").tag(i)
@@ -38,6 +42,7 @@ struct TimerPage: View {
                     VStack {
                         Text("Secondes")
                             .font(.headline)
+                            .foregroundColor(.black) // Texte en noir
                         Picker("", selection: $selectedSeconds) {
                             ForEach(0..<60, id: \.self) { i in
                                 Text("\(i)").tag(i)
@@ -54,14 +59,14 @@ struct TimerPage: View {
                         Image(systemName: isRunningTimer ? "pause.circle.fill" : "play.circle.fill")
                             .resizable()
                             .frame(width: 60, height: 60)
-                            .foregroundColor(isRunningTimer ? .red : .green)
+                            .foregroundColor(isRunningTimer ? .red : .green) // Couleurs pétantes
                     }
                     
                     Button(action: { resetTimer() }) {
                         Image(systemName: "arrow.counterclockwise.circle.fill")
                             .resizable()
                             .frame(width: 60, height: 60)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.blue) // Couleur pétante pour réinitialiser
                     }
                 }
             }
@@ -75,29 +80,34 @@ struct TimerPage: View {
                 Text("Chrono")
                     .font(.largeTitle)
                     .padding()
+                    .foregroundColor(.black) // Texte en noir
+
                 Text(formatTime(timeElapsedChrono))
                     .font(.largeTitle)
                     .padding()
+                    .foregroundColor(.black) // Texte en noir
 
                 HStack(spacing: 20) {
                     Button(action: { startChrono() }) {
                         Image(systemName: isRunningChrono ? "pause.circle.fill" : "play.circle.fill")
                             .resizable()
                             .frame(width: 60, height: 60)
-                            .foregroundColor(isRunningChrono ? .red : .green)
+                            .foregroundColor(isRunningChrono ? .red : .green) // Couleurs pétantes
                     }
                     
                     Button(action: { resetChrono() }) {
                         Image(systemName: "arrow.counterclockwise.circle.fill")
                             .resizable()
                             .frame(width: 60, height: 60)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.blue) // Couleur pétante pour réinitialiser
                     }
                 }
             }
             .padding()
         }
+        .background(Color.green.opacity(0.2))  // Fond bleu léger, mais les boutons restent pétants
     }
+
 
     // Timer Functions
     func startTimer() {
