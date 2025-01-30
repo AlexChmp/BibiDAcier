@@ -8,7 +8,7 @@ struct OnboardingView: View {
     ]
     
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
-    @State private var currentPage = 0
+    @State private var currentPage = 0  
     
     var body: some View {
         GeometryReader { geometry in

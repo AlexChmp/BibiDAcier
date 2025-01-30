@@ -20,7 +20,7 @@
 		BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F2D2D316B8600934D8F /* Assets.xcassets */; };
 		BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F312D316B8600934D8F /* Preview Assets.xcassets */; };
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
-		BEA597202D47D02D00D02D2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */; };
+		BE4B31B02D4B824F001D994F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE4B31AF2D4B824F001D994F /* GoogleService-Info.plist */; };
 		BEA597252D4911B400D02D2B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA597242D4911B400D02D2B /* AuthManager.swift */; };
 		BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3A2D3E462500F10224 /* MainTabView.swift */; };
 		BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEED3C2D3E86C000F10224 /* TimerPage.swift */; };
@@ -59,7 +59,7 @@
 		BE408F312D316B8600934D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE408F382D35237600934D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BE408F392D354CC000934D8F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE4B31AF2D4B824F001D994F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEA597242D4911B400D02D2B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		BEBEED3A2D3E462500F10224 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BEBEED3C2D3E86C000F10224 /* TimerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPage.swift; sourceTree = "<group>"; };
@@ -132,10 +132,10 @@
 				BE408F2F2D316B8600934D8F /* BibiDAcier.entitlements */,
 				BE408F392D354CC000934D8F /* LaunchScreen.storyboard */,
 				BE408F2D2D316B8600934D8F /* Assets.xcassets */,
-				BEA5971F2D47D02D00D02D2B /* GoogleService-Info.plist */,
 				BE408F302D316B8600934D8F /* Preview Content */,
 				BE13D15B2D390AC400D42453 /* exerciseScreen.swift */,
 				BE13D15D2D391AE900D42453 /* MuscleData.swift */,
+				BE4B31AF2D4B824F001D994F /* GoogleService-Info.plist */,
 				BEBEED3A2D3E462500F10224 /* MainTabView.swift */,
 				BEBEED3C2D3E86C000F10224 /* TimerPage.swift */,
 				BEBEED402D3F9AC000F10224 /* ProfilePage.swift */,
@@ -226,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */,
-				BEA597202D47D02D00D02D2B /* GoogleService-Info.plist in Resources */,
+				BE4B31B02D4B824F001D994F /* GoogleService-Info.plist in Resources */,
 				BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */,
 				BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */,
 			);
