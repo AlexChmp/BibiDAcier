@@ -1,4 +1,6 @@
 import SwiftUI
+import FirebaseFirestore
+import FirebaseAuth
 
 struct NewProgrammePage: View {
     @Binding var programmes: [(name: String, exercises: [String])] // Binding pour les programmes
@@ -7,6 +9,8 @@ struct NewProgrammePage: View {
     @State private var isSaving: Bool = false // Un état pour afficher un indicateur de sauvegarde
     
     @Environment(\.presentationMode) var presentationMode // Permet de fermer la vue et revenir à la vue précédente
+    
+    let programmeService = ProgrammeService() // Service pour gérer Firestore
 
     var body: some View {
         VStack {
@@ -90,8 +94,39 @@ struct NewProgrammePage: View {
         let newProgramme = (name: programmeName, exercises: selectedExercises)
         programmes.append(newProgramme) // Ajouter le programme à la liste
         
+        // Sauvegarder dans Firestore
+        programmeService.saveProgrammeToFirestore(programme: newProgramme) { error in
+            if let error = error {
+                print("Erreur lors de l'enregistrement du programme: \(error.localizedDescription)")
+            } else {
+                print("Programme enregistré avec succès dans Firestore!")
+            }
+        }
+        
         // Réinitialiser les champs après sauvegarde
         programmeName = ""
         selectedExercises.removeAll()
+    }
+}
+
+class ProgrammeService {
+    let db = Firestore.firestore()
+    
+    // Fonction pour enregistrer un programme
+    func saveProgrammeToFirestore(programme: (name: String, exercises: [String]), completion: @escaping (Error?) -> Void) {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            completion(NSError(domain: "Auth", code: 401, userInfo: [NSLocalizedDescriptionKey: "Utilisateur non connecté"]))
+            return
+        }
+        
+        let programmeData: [String: Any] = [
+            "name": programme.name,
+            "exercises": programme.exercises
+        ]
+        
+        // Enregistrer dans la collection "programmes" sous l'ID de l'utilisateur
+        db.collection("users").document(userId).collection("programmes").addDocument(data: programmeData) { error in
+            completion(error)
+        }
     }
 }
