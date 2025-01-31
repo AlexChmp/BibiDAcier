@@ -1,7 +1,6 @@
 import SwiftUI
 import FirebaseAuth
 import FirebaseCore
-import FirebaseAuth
 import FirebaseFirestore
 import Foundation
 
@@ -51,7 +50,6 @@ struct AuthCheckView: View {
             if isUserLoggedIn {
                 // Si l'utilisateur est connecté, afficher la vue principale
                 MainTabView()
-//                TestSendData()
             } else {
                 // Sinon, afficher la vue de connexion
                 PhoneNumberView(onLoginSuccess: {
@@ -74,12 +72,6 @@ struct AuthCheckView: View {
 }
 
 
-//
-//  TestSendData.swift
-//  BibiDAcier
-//
-//  Created by neoxia on 31/01/2025.
-//
 
 
 struct User: Codable {
@@ -160,13 +152,4 @@ class UserService {
 
 
 
-//struct TestSendData: View{
-//    var userService = UserService()
-//    let user = User(name: "Alexandre", firsName: "Champier", age: 14, height: 190, profilePicture: "", weight: 1000)
-//
-//    var body: some View {
-//        Button("send Data", action: {
-//            userService.addUser(user: user, completion: {_ in })
-//        })
-//    }
-//}
+
