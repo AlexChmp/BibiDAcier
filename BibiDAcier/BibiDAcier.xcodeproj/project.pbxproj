@@ -16,7 +16,6 @@
 		BE3B434B2D492051005ABF87 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = BE3B434A2D492051005ABF87 /* FirebaseFunctions */; };
 		BE3B434D2D492051005ABF87 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BE3B434C2D492051005ABF87 /* FirebaseStorage */; };
 		BE408F2A2D316B8600934D8F /* BibiDAcierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE408F292D316B8600934D8F /* BibiDAcierApp.swift */; };
-		BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE408F2B2D316B8600934D8F /* ContentView.swift */; };
 		BE408F2E2D316B8600934D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F2D2D316B8600934D8F /* Assets.xcassets */; };
 		BE408F322D316B8600934D8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE408F312D316B8600934D8F /* Preview Assets.xcassets */; };
 		BE408F3A2D354CC000934D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE408F392D354CC000934D8F /* LaunchScreen.storyboard */; };
@@ -48,12 +47,8 @@
 		BE13D15D2D391AE900D42453 /* MuscleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleData.swift; sourceTree = "<group>"; };
 		BE3B43542D49276F005ABF87 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		BE3B43562D49276F005ABF87 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		BE3B43592D49276F005ABF87 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		BE3B435C2D49276F005ABF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		BE3B435E2D49276F005ABF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE408F262D316B8500934D8F /* BibiDAcier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibiDAcier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE408F292D316B8600934D8F /* BibiDAcierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibiDAcierApp.swift; sourceTree = "<group>"; };
-		BE408F2B2D316B8600934D8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE408F2D2D316B8600934D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE408F2F2D316B8600934D8F /* BibiDAcier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BibiDAcier.entitlements; sourceTree = "<group>"; };
 		BE408F312D316B8600934D8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -95,21 +90,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE3B43582D49276F005ABF87 /* notif */ = {
-			isa = PBXGroup;
-			children = (
-				BE3B43592D49276F005ABF87 /* NotificationViewController.swift */,
-				BE3B435B2D49276F005ABF87 /* MainInterface.storyboard */,
-				BE3B435E2D49276F005ABF87 /* Info.plist */,
-			);
-			path = notif;
-			sourceTree = "<group>";
-		};
 		BE408F1D2D316B8500934D8F = {
 			isa = PBXGroup;
 			children = (
 				BE408F282D316B8600934D8F /* BibiDAcier */,
-				BE3B43582D49276F005ABF87 /* notif */,
 				BE3B43532D49276F005ABF87 /* Frameworks */,
 				BE408F272D316B8500934D8F /* Products */,
 			);
@@ -128,7 +112,6 @@
 			children = (
 				BE408F382D35237600934D8F /* Info.plist */,
 				BE408F292D316B8600934D8F /* BibiDAcierApp.swift */,
-				BE408F2B2D316B8600934D8F /* ContentView.swift */,
 				BE408F2F2D316B8600934D8F /* BibiDAcier.entitlements */,
 				BE408F392D354CC000934D8F /* LaunchScreen.storyboard */,
 				BE408F2D2D316B8600934D8F /* Assets.xcassets */,
@@ -241,7 +224,6 @@
 			files = (
 				BEBEED3B2D3E462500F10224 /* MainTabView.swift in Sources */,
 				BE13D15C2D390AC400D42453 /* exerciseScreen.swift in Sources */,
-				BE408F2C2D316B8600934D8F /* ContentView.swift in Sources */,
 				BEBEED412D3F9AC000F10224 /* ProfilePage.swift in Sources */,
 				BEBEED3D2D3E86C000F10224 /* TimerPage.swift in Sources */,
 				BEBEED472D3FFDE100F10224 /* NewProgrammePage.swift in Sources */,
@@ -254,17 +236,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BE3B435B2D49276F005ABF87 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE3B435C2D49276F005ABF87 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BE408F332D316B8600934D8F /* Debug */ = {

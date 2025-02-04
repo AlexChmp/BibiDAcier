@@ -105,7 +105,6 @@ struct TimerPage: View {
             }
             .padding()
         }
-        .background(Color.green.opacity(0.2))  // Fond bleu léger, mais les boutons restent pétants
     }
 
 
