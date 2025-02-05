@@ -29,6 +29,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+// Main
 @main
 struct BibiDAcierApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
