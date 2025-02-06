@@ -94,7 +94,6 @@ struct TimerPage: View {
                             .frame(width: 60, height: 60)
                             .foregroundColor(isRunningChrono ? .red : .green) // Couleurs pétantes
                     }
-                    
                     Button(action: { resetChrono() }) {
                         Image(systemName: "arrow.counterclockwise.circle.fill")
                             .resizable()
