@@ -17,7 +17,7 @@ struct MuscleGroup {
 let muscleGroups: [MuscleGroup] = [
     MuscleGroup(
         name: "Arrières d'épaule",
-        imageName: "arrièred'épaules_icon",
+        imageName: "arrieredepaules_icon",
         exercises: ["Tirage corde", "Élévations latérales"],
         exerciseDetails: [
             "Tirage corde": "Le tirage corde, réalisé sur une poulie, est un exercice ciblant les deltoïdes postérieurs, les trapèzes et les muscles stabilisateurs de l'épaule. Cet exercice consiste à tirer une corde vers le visage, tout en gardant les coudes élevés et en contrôlant le mouvement.",
@@ -26,7 +26,7 @@ let muscleGroups: [MuscleGroup] = [
     ),
     MuscleGroup(
         name: "Épaules",
-        imageName: "épaules_icon",
+        imageName: "epaules_icon",
         exercises: ["Élévation latérales poids libres/ poulie", "Press épaule", "Développé militaire banc"],
         exerciseDetails: [
             "Élévation latérales poids libres/ poulie": "Les élévations latérales consistent à lever les bras sur les côtés jusqu'à la hauteur des épaules, en utilisant des haltères ou une poulie. Cet exercice isole le faisceau moyen des deltoïdes, responsable de la largeur des épaules.",

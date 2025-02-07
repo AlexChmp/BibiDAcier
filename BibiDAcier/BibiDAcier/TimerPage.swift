@@ -13,97 +13,99 @@ struct TimerPage: View {
     var body: some View {
         VStack {
             // Timer Section
-            VStack(spacing: 20) {
-                Text("Timer")
-                    .font(.largeTitle)
-                    .padding()
-                    .foregroundColor(.black) // Texte en noir pour un contraste optimal
-
-                Text(formatTime(timeElapsedTimer))
-                    .font(.largeTitle)
-                    .padding()
-                    .foregroundColor(.black) // Texte en noir pour un contraste optimal
-
-                // Picker for minutes
-                HStack {
-                    VStack {
-                        Text("Minutes")
-                            .font(.headline)
-                            .foregroundColor(.black) // Texte en noir
-                        Picker("", selection: $selectedMinutes) {
-                            ForEach(0..<60, id: \.self) { i in
-                                Text("\(i)").tag(i)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(height: 100)
-                    }
-
-                    VStack {
-                        Text("Secondes")
-                            .font(.headline)
-                            .foregroundColor(.black) // Texte en noir
-                        Picker("", selection: $selectedSeconds) {
-                            ForEach(0..<60, id: \.self) { i in
-                                Text("\(i)").tag(i)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(height: 100)
-                    }
-                }
-                .padding()
-
-                HStack(spacing: 20) {
-                    Button(action: { startTimer() }) {
-                        Image(systemName: isRunningTimer ? "pause.circle.fill" : "play.circle.fill")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(isRunningTimer ? .red : .green) // Couleurs pétantes
-                    }
+            ScrollView(.vertical) {
+                VStack(spacing: 20) {
+                    Text("Timer")
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.black) // Texte en noir pour un contraste optimal
                     
-                    Button(action: { resetTimer() }) {
-                        Image(systemName: "arrow.counterclockwise.circle.fill")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(.blue) // Couleur pétante pour réinitialiser
+                    Text(formatTime(timeElapsedTimer))
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.black) // Texte en noir pour un contraste optimal
+                    
+                    // Picker for minutes
+                    HStack {
+                        VStack {
+                            Text("Minutes")
+                                .font(.headline)
+                                .foregroundColor(.black) // Texte en noir
+                            Picker("", selection: $selectedMinutes) {
+                                ForEach(0..<60, id: \.self) { i in
+                                    Text("\(i)").tag(i)
+                                }
+                            }
+                            .pickerStyle(WheelPickerStyle())
+                            .frame(height: 100)
+                        }
+                        
+                        VStack {
+                            Text("Secondes")
+                                .font(.headline)
+                                .foregroundColor(.black) // Texte en noir
+                            Picker("", selection: $selectedSeconds) {
+                                ForEach(0..<60, id: \.self) { i in
+                                    Text("\(i)").tag(i)
+                                }
+                            }
+                            .pickerStyle(WheelPickerStyle())
+                            .frame(height: 100)
+                        }
+                    }
+                    .padding()
+                    
+                    HStack(spacing: 20) {
+                        Button(action: { startTimer() }) {
+                            Image(systemName: isRunningTimer ? "pause.circle.fill" : "play.circle.fill")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(isRunningTimer ? .red : .green) // Couleurs pétantes
+                        }
+                        
+                        Button(action: { resetTimer() }) {
+                            Image(systemName: "arrow.counterclockwise.circle.fill")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(.blue) // Couleur pétante pour réinitialiser
+                        }
                     }
                 }
-            }
-            .padding()
-
-            Divider()
                 .padding()
-
-            // Chrono Section
-            VStack(spacing: 20) {
-                Text("Chrono")
-                    .font(.largeTitle)
+                
+                Divider()
                     .padding()
-                    .foregroundColor(.black) // Texte en noir
-
-                Text(formatTime(timeElapsedChrono))
-                    .font(.largeTitle)
-                    .padding()
-                    .foregroundColor(.black) // Texte en noir
-
-                HStack(spacing: 20) {
-                    Button(action: { startChrono() }) {
-                        Image(systemName: isRunningChrono ? "pause.circle.fill" : "play.circle.fill")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(isRunningChrono ? .red : .green) // Couleurs pétantes
-                    }
-                    Button(action: { resetChrono() }) {
-                        Image(systemName: "arrow.counterclockwise.circle.fill")
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                            .foregroundColor(.blue) // Couleur pétante pour réinitialiser
+                
+                // Chrono Section
+                VStack(spacing: 20) {
+                    Text("Chrono")
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.black) // Texte en noir
+                    
+                    Text(formatTime(timeElapsedChrono))
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.black) // Texte en noir
+                    
+                    HStack(spacing: 20) {
+                        Button(action: { startChrono() }) {
+                            Image(systemName: isRunningChrono ? "pause.circle.fill" : "play.circle.fill")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(isRunningChrono ? .red : .green) // Couleurs pétantes
+                        }
+                        Button(action: { resetChrono() }) {
+                            Image(systemName: "arrow.counterclockwise.circle.fill")
+                                .resizable()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(.blue) // Couleur pétante pour réinitialiser
+                        }
                     }
                 }
+                .padding()
             }
-            .padding()
-        }
+        }.background(.white)
     }
 
 

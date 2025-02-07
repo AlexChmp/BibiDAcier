@@ -162,3 +162,8 @@ struct ProfilePage: View {
         }
     }
 }
+
+
+#Preview {
+    ProfilePage()
+}

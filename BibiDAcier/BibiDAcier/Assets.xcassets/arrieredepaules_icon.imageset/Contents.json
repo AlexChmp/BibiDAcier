@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "arrièred'épaules_icon.jpg",
+      "filename" : "arrieredepaules_icon 1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "arrieredepaules_icon 3.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "arrieredepaules_icon 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
